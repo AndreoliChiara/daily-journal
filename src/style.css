@@ -150,10 +150,6 @@ a {
   
 }
 
-
-
-
-
 #risposte-archivio {
   width: 50%;
   color: white;
@@ -176,7 +172,7 @@ a {
 @media only screen and (max-width: 390px){
 
 body {
-  width: 100%;
+  height: 100%;
   background-image: url("img/back.gif");
   background-repeat: no-repeat;
   background-size: 100%;
