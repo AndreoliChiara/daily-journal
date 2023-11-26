@@ -8,8 +8,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="CC – SUPSI 2023" />
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CC – SUPSI 2023" />
     <meta name="keywords" content="Creative, Coding, SUPSI, 2023" />
     <meta name="web_author" content="Chiara Andreoli" />
     <meta name="copyright" content="Chiara Andreoli" />
@@ -19,6 +20,8 @@
 
 
   <body id="body">
+    <!-- <div onclick="start_accellerometro()" id="start_demo" class="btn btn-lg btn-success py-1" href="#" role="button" style="position: fixed; top: 0; left: 0; background-color: blue;z-index: 2000;">Start the demo</div>
+    <div id="beta" style="position: fixed; top: 0; background-color: red;z-index: 1000;">AA</div> -->
   <div id="contenitore">
 
     <div id="titolo">
@@ -26,31 +29,32 @@
       <div id="sottotitolo">How you feel today? </div> 
     </div>
 
-
+    <!-- Domanda -->
     <div id="domanda">
       <button onclick="readQuestion()" id="bottone">Read question</button>
       <div id="question-container"></div>
     </div>
 
+
+     <!-- Risposta -->
     <div id="risposta">
       <div>
-      <button id="click_to_record">Voice To Text</button>
-    </div>
-    
-      <input name="" id="convert_text"></input>
+      <button id="click_to_record">Voice to text</button>
     </div>
 
+    <!-- Risposta vocale -->
+      <p name="" id="convert_text"></p>
+    </div>
   </div>
 
-    
-  <div id="archivio">
-    <a href="archivio.html">Archivio</a>
-    <ul id="risposte-archivio"></ul>
-  </div>
+  <!-- Salva domande -->  
+  <div id="contenitore-archivio">Archivio</div>
+  <ul id="risposte-archivio"></ul>
 
+
+  <!-- Data -->  
   <div id="p"></div>
  
-  
   </body>
 
  
